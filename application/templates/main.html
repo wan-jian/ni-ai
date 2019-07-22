@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="margin-top: 20px">
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">序号</th>
+        <th scope="col">医院</th>
+        <th scope="col">病历号</th>
+        <th scope="col">姓名</th>
+        <th scope="col">性别</th>
+        <th scope="col">出生日期</th>
+        <th scope="col">入院时间</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for doc in docs %}
+      <tr>
+        <th scope="row">{{ doc.序号 }}</th>
+        <td>{{ doc['医院'] }}</td>
+        <td>{{ doc['病历号'] }}</td>
+        <td>{{ doc['姓名'] }}</td>
+        <td>{{ doc['性别'] }}</td>
+        <td>{{ doc['出生日期'] }}</td>
+        <td>{{ doc['入院时间'] }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

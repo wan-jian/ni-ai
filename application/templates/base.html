@@ -1,0 +1,44 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}脑卒中数据采集系统{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
+  <a class="navbar-brand" href="#">NI-AI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-md-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">所有病例<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">高阶搜索<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0  mr-auto">
+      <input class="form-control mr-sm-2" type="search" placeholder="快速搜索文本" aria-label="快速搜索文本">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+    </form>
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          系统设置
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">用户信息</a>
+          <a class="dropdown-item" href="#">修改密码</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">退出系统</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
